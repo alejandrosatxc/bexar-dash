@@ -1,9 +1,18 @@
-import type { NextPage } from 'next'
+import type { NextPage, GetStaticProps } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import prisma from '../lib/prisma'
 
-const Home: NextPage = () => {
+export const getStaticProps: GetStaticProps = async () => {
+  const polls = await prisma.poll.findMany({
+    where: { pollNumber: 6 },
+  })
+  return { props: { polls } }
+}
+
+const Home: NextPage = ( polls ) => {
+  console.log(polls)
   return (
     <div className={styles.container}>
       <Head>
