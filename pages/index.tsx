@@ -40,7 +40,7 @@ const Home = ( { data } : Props ) => {
     <div className={styles.container}>
       <Head>
         <title>Bexar Dash</title>
-        <meta name="description" content="Created by Alejandro Zapien" />
+        <meta name="description" content="A data visualization dashboard for polling data. In Bexar County! Created by Alejandro Zapien." />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <main className={styles.main}>
