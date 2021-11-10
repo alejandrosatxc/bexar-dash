@@ -22,9 +22,6 @@ const Home = ( { data } : Props ) => {
     var element = document.getElementById('chart')
     element?.append(
       Plot.plot({
-        marginLeft: 45,
-        marginTop: 30,
-        marginBottom: 40,
         y: {
           grid: true
         },
@@ -55,14 +52,11 @@ const Home = ( { data } : Props ) => {
 
         <div id="chart"></div>
 
-        
-
-     
       </main>
 
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://bexarfacts.org"
           target="_blank"
           rel="noopener noreferrer"
         >
