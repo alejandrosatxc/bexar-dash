@@ -16,3 +16,8 @@ model Poll {
   pollNumber  Int
   published   Boolean @default(false)
 }
+
+model Test {
+  letter    String  @id
+  frequency Float
+}
