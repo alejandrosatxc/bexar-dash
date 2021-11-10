@@ -22,6 +22,9 @@ const Home = ( { data } : Props ) => {
     var element = document.getElementById('chart')
     element?.append(
       Plot.plot({
+        marginLeft: 45,
+        marginTop: 30,
+        marginBottom: 40,
         y: {
           grid: true
         },
@@ -62,7 +65,7 @@ const Home = ( { data } : Props ) => {
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <Image src="/bf-1.png" alt="Vercel Logo" width={72} height={16} />
+            <Image src="/bf-1.png" alt="Bexar Facts Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
